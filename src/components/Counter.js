@@ -1,12 +1,13 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import PropTypes from "prop-types";
+import Clock from "../img/clock.png"
 
 function Counter(props) {
     return (
       <div className="container">
         <div className="row display-4">
-            <div className="col-md-auto bg-secondary text-white bg-dark"><i className="far fa-clock"></i></div>
+            <div className="col-md-auto bg-secondary text-white bg-dark"> <img src={Clock} width="100" height="100"></img> </div>
             <div className="col-md-auto bg-secondary text-white bg-dark">{props.digitSix % 10}</div>
             <div className="col-md-auto bg-secondary text-white bg-dark">{props.digitFive % 10}</div>
             <div className="col-md-auto bg-secondary text-white bg-dark">{props.digitFour % 10}</div>
